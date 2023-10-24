@@ -1,7 +1,8 @@
-[gd_scene load_steps=52 format=3 uid="uid://cw5oti6ky2ctp"]
+[gd_scene load_steps=53 format=3 uid="uid://cw5oti6ky2ctp"]
 
 [ext_resource type="Texture2D" uid="uid://ble7xv25pmm22" path="res://sprites/Huntress/Sprites/Attack1.png" id="1_3bxct"]
 [ext_resource type="Texture2D" uid="uid://l8bjyd45q4fc" path="res://sprites/Huntress/Sprites/Idle.png" id="1_7b23o"]
+[ext_resource type="Script" path="res://scripts/playerScript.gd" id="1_f6kbr"]
 [ext_resource type="Texture2D" uid="uid://de7nwm2n0up3j" path="res://sprites/Huntress/Sprites/Attack2.png" id="2_nplr0"]
 [ext_resource type="Texture2D" uid="uid://bg4mvpskkicwv" path="res://sprites/Huntress/Sprites/Fall.png" id="3_g66vw"]
 [ext_resource type="Texture2D" uid="uid://bgfvle0ujc04v" path="res://sprites/Huntress/Sprites/Death.png" id="3_gyxqq"]
@@ -345,9 +346,9 @@ animations = [{
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(1, 0)
+script = ExtResource("1_f6kbr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-1, 2)
 shape = SubResource("CapsuleShape2D_oht82")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)

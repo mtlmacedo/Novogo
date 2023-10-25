@@ -10,9 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://ckbt6oa155x4g" path="res://sprites/Huntress/Sprites/Jump.png" id="6_jna1h"]
 [ext_resource type="Texture2D" uid="uid://6k4oqlj3mbc4" path="res://sprites/Huntress/Sprites/Run.png" id="7_d716a"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oht82"]
-radius = 8.0
-height = 38.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed6g3"]
+size = Vector2(16, 33.5937)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tq7j5"]
 atlas = ExtResource("1_3bxct")
@@ -349,8 +348,9 @@ position = Vector2(1, 0)
 script = ExtResource("1_f6kbr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 2)
-shape = SubResource("CapsuleShape2D_oht82")
+position = Vector2(-2, 3.5)
+scale = Vector2(1, 1.28)
+shape = SubResource("RectangleShape2D_ed6g3")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
